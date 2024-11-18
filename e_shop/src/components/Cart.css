@@ -1,0 +1,125 @@
+
+.header-home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    background-color: #4daecd;
+  }
+  
+  .img-logo {
+    height: 12vh;
+  }
+  
+  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .img-logo {
+      height: 8vh;
+    }
+  
+    .header-home {
+      font-size: 10px;
+    }
+  }
+  
+  .main-content {
+    background-color: #eae7e7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    padding: 20px;
+  }
+  
+  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  .product-card {
+    height: 90vh;
+    width: 20vw;
+    padding: 0 0 20px 0;
+    box-shadow: 1px 1px 5px #4daecd;
+    border-radius: 9px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+  
+  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .product-card {
+      width: 65vw;
+    }
+  }
+  
+  .product-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .total-value {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-home {
+    background-color: #4daecd;
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .footer-home {
+      height: 16vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .social-icon {
+    height: 5vh;
+    margin: 10px;
+  }
+  
+  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .social-icon {
+      height: 4vh;
+      margin: 3px;
+    }
+  }
+  
+  .btn-back {
+    width: 10vw;
+    height: 6vh;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .btn-back {
+      height: 6vh;
+      width: 15vw;
+      font-size: 8px;
+      border-radius: 10px;
+    }
+  }
+  

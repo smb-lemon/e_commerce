@@ -1,42 +1,79 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+.card-product {
+  height: 65vh;
+  width: 18vw;
+  padding: 0px 0px 20px 0px;
+  box-shadow: 1px 1px 5px #4daecd;
+  border-radius: 9px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.card-product:hover {
+  transform: scale(1.1);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.product-img {
+  width: 100%;
+  height: 75%;
+}
+
+.main-principal {
+  background-color: #eae7e7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .main-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card-product {
+    width: 65vw;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.footer-principal {
+  background-color: #4daecd;
+  height: 12vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-principal h3 {
+  margin: 0;
+}
+
+.footer-principal .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-principal .social-icons img {
+  height: 5vh;
+  margin: 10px;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .footer-principal {
+    height: 16vh;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .footer-principal .social-icons img {
+    height: 4vh;
+    margin: 3px;
+  }
 }
